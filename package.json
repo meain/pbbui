@@ -7,9 +7,11 @@
   },
   "dependencies": {
     "color-hash": "^1.0.3",
+    "highlight.js": "^9.13.1",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
     "react-scripts": "2.1.0",
+    "remarkable": "^1.7.1",
     "sweetalert": "^2.1.2"
   },
   "scripts": {

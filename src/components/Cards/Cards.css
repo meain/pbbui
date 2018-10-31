@@ -7,3 +7,13 @@
 h2 {
   text-align: center;
 }
+.swal-content {
+  text-align: left;
+  overflow: auto;
+}
+.swal-content *{
+  font-family: monaco;
+}
+.swal-modal {
+  width: 90% !important;
+}

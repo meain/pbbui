@@ -8,6 +8,33 @@ import data from '../../pbb.js'
 import ColorHash from 'color-hash'
 import swal from 'sweetalert'
 
+var Remarkable = require('remarkable')
+var hljs       = require('highlight.js')
+
+var md = new Remarkable('full', {
+  html:         false,
+  xhtmlOut:     false,
+  breaks:       false,
+  langPrefix:   'language-',
+  linkify:      true,
+  linkTarget:   '',
+  typographer:  false,
+  quotes: '“”‘’',
+  highlight: function (str, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return hljs.highlight(lang, str).value;
+      } catch (__) {}
+    }
+
+    try {
+      return hljs.highlightAuto(str).value;
+    } catch (__) {}
+
+    return '';
+  }
+});
+
 const getTagColor = (tag: string): string => {
   const colorHash = new ColorHash({ lightness: 0.5 })
   let color = colorHash.rgb(tag)
@@ -49,7 +76,9 @@ const Cards = props => {
                 <Card
                   key={card.header + card.title}
                   onClick={() => {
-                    swal(card.content)
+                    let opener = document.createElement('p')
+                    opener.innerHTML = md.render(card.content)
+                    swal({ content: opener })
                   }}
                   {...card}
                 />

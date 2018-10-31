@@ -19,6 +19,8 @@ for line in data:
     elif line.startswith("#"):
         if not is_code_block:
             heading = re.sub("# *", "", line)
+    elif line.startswith('<!--'):
+        continue
     else:
         content.append(line)
 
