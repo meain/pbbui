@@ -1,69 +1,39 @@
 // @flow
 import './Cards.css'
 
-import React, { useState } from 'react'
-
-import Card from '../Card/Card'
-import data from '../../pbb.js'
-import ColorHash from 'color-hash'
+import React from 'react'
 import swal from 'sweetalert'
 
+import Card from '../Card/Card'
+
 var Remarkable = require('remarkable')
-var hljs       = require('highlight.js')
+var hljs = require('highlight.js')
 
 var md = new Remarkable('full', {
-  html:         false,
-  xhtmlOut:     false,
-  breaks:       false,
-  langPrefix:   'language-',
-  linkify:      true,
-  linkTarget:   '',
-  typographer:  false,
+  html: false,
+  xhtmlOut: false,
+  breaks: false,
+  langPrefix: 'language-',
+  linkify: true,
+  linkTarget: '',
+  typographer: false,
   quotes: '“”‘’',
-  highlight: function (str, lang) {
+  highlight: function(str, lang) {
     if (lang && hljs.getLanguage(lang)) {
       try {
-        return hljs.highlight(lang, str).value;
+        return hljs.highlight(lang, str).value
       } catch (__) {}
     }
 
     try {
-      return hljs.highlightAuto(str).value;
+      return hljs.highlightAuto(str).value
     } catch (__) {}
 
-    return '';
-  }
-});
+    return ''
+  },
+})
 
-const getTagColor = (tag: string): string => {
-  const colorHash = new ColorHash({ lightness: 0.5 })
-  let color = colorHash.rgb(tag)
-  const rgbaString = `rgba(${color[0]}, ${color[1]}, ${color[2]}, 0.9)`
-  return rgbaString
-}
-
-const formatData = data => {
-  let formatted = []
-  for (let heading in data) {
-    let set = []
-    let accent = getTagColor(heading)
-    for (let subheading in data[heading]) {
-      set.push({
-        header: heading,
-        title: subheading,
-        content: data[heading][subheading].join('\n'),
-        accent,
-      })
-    }
-    formatted.push(set)
-  }
-  return formatted
-}
-
-const Cards = props => {
-  const fData = formatData(data)
-  console.log('fData:', fData)
-  const [cards, setCards] = useState(fData)
+const Cards = ({ cards }) => {
   let previousHeader = undefined
   return (
     <>
