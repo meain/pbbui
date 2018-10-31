@@ -2,11 +2,13 @@
   "name": "pbbui",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://meain.github.io/pbbui",
   "installConfig": {
     "pnp": true
   },
   "dependencies": {
     "color-hash": "^1.0.3",
+    "gh-pages": "^2.0.1",
     "highlight.js": "^9.13.1",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
@@ -18,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
