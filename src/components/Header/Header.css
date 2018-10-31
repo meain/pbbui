@@ -1,0 +1,30 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+}
+.Header-icon{
+  height: 20px;
+  margin-right: 10px;
+}
+.Header-input{
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  font-size: 1rem;
+}
+.Header-boundry{
+  background: #cccccc1a;
+  border: 3px solid #cccccc61;
+  border-radius: 5px;
+  margin: 20px 100px;
+}
