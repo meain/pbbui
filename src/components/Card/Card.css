@@ -1,0 +1,30 @@
+.Card {
+  background-color: #f5f5f5;
+  border: 1px solid #EEEEEE;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.08);
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  transition: .3s all;
+}
+
+.Card:hover {
+  background-color: #f9f9f9;
+  box-shadow: 3px 3px 4px 0 rgba(0,0,0,0.08);
+}
+
+.header{
+  text-align: right;
+  text-transform: uppercase;
+}
+.title{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}

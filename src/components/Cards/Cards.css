@@ -1,0 +1,9 @@
+.Cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+h2 {
+  text-align: center;
+}
