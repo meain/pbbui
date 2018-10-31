@@ -35,9 +35,24 @@ const formatData = data => {
 const App = () => {
   const fData = formatData(data)
   const [cards, setCards] = useState(fData)
+
+  const filterCards = search => {
+    console.log('search:', search)
+    let newCards = fData
+      .map(ca =>
+        ca.filter(
+          c =>
+            c.title.toLowerCase().includes(search.toLowerCase()) ||
+            c.header.toLowerCase().includes(search.toLowerCase())
+        )
+      )
+      .filter(cd => cd.length > 0)
+    setCards(newCards)
+  }
+
   return (
     <div className="App">
-      <Header />
+      <Header onChange={filterCards} />
       <Cards cards={cards} />
     </div>
   )
