@@ -17,3 +17,10 @@ h2 {
 .swal-modal {
   width: 90% !important;
 }
+.swal-button{
+    background-color: #f5f5f5 !important;
+    color: #222;
+}
+.swal-button:hover{
+    background-color: #f5f5f5 !important;
+}
