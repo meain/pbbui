@@ -10,10 +10,11 @@
   justify-content: center;
   align-items: center;
   background-color: #f5f5f5;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
+  width: 300px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .Header-hero{
     width: 100%;
     text-align: center;
@@ -32,10 +33,15 @@
   outline: none;
   background-color: #f5f5f5;
   font-size: 1rem;
+  flex: 1;
 }
 .Header-boundry{
   background: #cccccc1a;
   border: 3px solid #cccccc61;
   border-radius: 5px;
   margin: 20px 100px;
+}
+
+h2 {
+  text-align: center;
 }
