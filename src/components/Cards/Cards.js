@@ -19,6 +19,7 @@ var md = new Remarkable('full', {
   typographer: false,
   quotes: '“”‘’',
   highlight: function(str, lang) {
+    if (lang == 'shell') lang = 'sh'
     if (lang && hljs.getLanguage(lang)) {
       try {
         return hljs.highlight(lang, str).value
@@ -47,7 +48,9 @@ const Cards = ({ cards }) => {
                   key={card.header + card.title}
                   onClick={() => {
                     let opener = document.createElement('p')
-                    opener.innerHTML = `<h4 style="color: ${card.accent};text-align: center;">${card.title}</h4>` + md.render(card.content)
+                    opener.innerHTML =
+                      `<h4 style="color: ${card.accent};text-align: center;">${card.title}</h4>` +
+                      md.render(card.content)
                     swal({ content: opener })
                   }}
                   {...card}
