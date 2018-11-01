@@ -1,14 +1,14 @@
 {
-  "main.css": "/pbbui/static/css/main.e7588586.chunk.css",
-  "main.js": "/pbbui/static/js/main.7ec8e16f.chunk.js",
-  "main.js.map": "/pbbui/static/js/main.7ec8e16f.chunk.js.map",
+  "main.css": "/pbbui/static/css/main.41dcb08d.chunk.css",
+  "main.js": "/pbbui/static/js/main.cbb56d6e.chunk.js",
+  "main.js.map": "/pbbui/static/js/main.cbb56d6e.chunk.js.map",
   "static/js/1.968ed3ee.chunk.js": "/pbbui/static/js/1.968ed3ee.chunk.js",
   "static/js/1.968ed3ee.chunk.js.map": "/pbbui/static/js/1.968ed3ee.chunk.js.map",
   "runtime~main.js": "/pbbui/static/js/runtime~main.701e34dc.js",
   "runtime~main.js.map": "/pbbui/static/js/runtime~main.701e34dc.js.map",
   "static/media/magnifier-tool.svg": "/pbbui/static/media/magnifier-tool.54af9eb3.svg",
-  "static/css/main.e7588586.chunk.css.map": "/pbbui/static/css/main.e7588586.chunk.css.map",
+  "static/css/main.41dcb08d.chunk.css.map": "/pbbui/static/css/main.41dcb08d.chunk.css.map",
   "index.html": "/pbbui/index.html",
-  "precache-manifest.385b5a1cc5804d82c0c008f7e05be728.js": "/pbbui/precache-manifest.385b5a1cc5804d82c0c008f7e05be728.js",
+  "precache-manifest.3ceddae75c51413e876d66f03657ab8b.js": "/pbbui/precache-manifest.3ceddae75c51413e876d66f03657ab8b.js",
   "service-worker.js": "/pbbui/service-worker.js"
 }
