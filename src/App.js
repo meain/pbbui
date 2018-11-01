@@ -1,9 +1,10 @@
 import './App.css'
 
-import React, { useState } from 'react'
 import ColorHash from 'color-hash'
+import React, { useState } from 'react'
 
 import Cards from './components/Cards/Cards'
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header'
 import data from './pbb.js'
 
@@ -54,6 +55,7 @@ const App = () => {
     <div className="App">
       <Header onChange={filterCards} />
       <Cards cards={cards} />
+      <Footer />
     </div>
   )
 }
