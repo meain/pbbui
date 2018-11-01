@@ -1,3 +1,22 @@
 .App {
-  font-family: consolas, 'Inconsolata', monospace;
+  font-family: consolas, monaco, 'Inconsolata', monospace;
+}
+pre {
+  background-color: #ececec;
+  padding: 10px;
+}
+td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding: 12px;
+    text-align: left;
+    background-color: #222;
+    color: white;
 }
