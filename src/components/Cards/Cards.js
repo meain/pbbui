@@ -47,7 +47,7 @@ const Cards = ({ cards }) => {
                   key={card.header + card.title}
                   onClick={() => {
                     let opener = document.createElement('p')
-                    opener.innerHTML = md.render(card.content)
+                    opener.innerHTML = `<h4 style="color: ${card.accent};text-align: center;">${card.title}</h4>` + md.render(card.content)
                     swal({ content: opener })
                   }}
                   {...card}
