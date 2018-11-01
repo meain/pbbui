@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "0835be099d9bf8ed8b0a",
+    "revision": "7ec8e16f47bc44ab2bec",
     "url": "/pbbui/static/css/main.e7588586.chunk.css"
   },
   {
-    "revision": "0835be099d9bf8ed8b0a",
-    "url": "/pbbui/static/js/main.0835be09.chunk.js"
+    "revision": "7ec8e16f47bc44ab2bec",
+    "url": "/pbbui/static/js/main.7ec8e16f.chunk.js"
   },
   {
     "revision": "968ed3ee8e1d645d2f0a",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/pbbui/static/media/magnifier-tool.54af9eb3.svg"
   },
   {
-    "revision": "d691426b8157f024b0f63490d501ba1e",
+    "revision": "5e76e94ca581b1b3b84b69a1c09fbd2d",
     "url": "/pbbui/index.html"
   }
 ];
