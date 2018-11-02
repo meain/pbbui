@@ -2,7 +2,7 @@
 
 A UI for [`Pure Bash Bible`](https://github.com/dylanaraps/pure-bash-bible) by `dylanaraps`.
 
-![screenshot](https://i.imgur.com/AdDS7vd.png)
+![screenshot](https://i.imgur.com/uV7naOH.png)
 
 
 ## Update content
