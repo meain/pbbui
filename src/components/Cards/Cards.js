@@ -37,7 +37,7 @@ var md = new Remarkable('full', {
 const Cards = ({ cards }) => {
   let previousHeader = undefined
   return (
-    <>
+    <div class="Cards-wrapper">
       {cards.map(set => (
         <>
           <h2 style={{ color: set[0].accent }}>{set[0].header}</h2>
@@ -60,7 +60,7 @@ const Cards = ({ cards }) => {
           </div>
         </>
       ))}
-    </>
+    </div>
   )
 }
 

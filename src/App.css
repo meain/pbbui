@@ -1,5 +1,9 @@
 .App {
   font-family: consolas, monaco, 'Inconsolata', monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 pre {
   background-color: #ececec;

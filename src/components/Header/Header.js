@@ -9,7 +9,7 @@ type State = {}
 
 const Header = ({ onChange }) => {
   return (
-    <>
+    <div class="Header-wrapper">
       <div className="Header">
         <h1 className="Header-hero">Pure Bash Bible</h1>
         <div className="search">
@@ -22,8 +22,7 @@ const Header = ({ onChange }) => {
           />
         </div>
       </div>
-      <hr className="Header-boundry" />
-    </>
+    </div>
   )
 }
 

@@ -1,3 +1,12 @@
+.Cards-wrapper{
+  margin-top: 150px;
+}
+@media only screen and (max-width: 700px) {
+  .Cards-wrapper{
+    margin-top: 130px;
+    flex: 1;
+  }
+}
 .Cards {
     display: flex;
     justify-content: center;
