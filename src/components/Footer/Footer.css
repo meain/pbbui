@@ -1,16 +1,16 @@
-.Footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #222;
-    color: white;
-    padding: 10px 30px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #222;
+  color: white;
+  padding: 10px 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.Footer>span>a {
+.Footer > span > a {
   color: turquoise;
 }

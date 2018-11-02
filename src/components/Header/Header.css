@@ -1,9 +1,9 @@
-.Header-wrapper{
+.Header-wrapper {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.08);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.08);
 }
 .Header {
   display: flex;
@@ -22,10 +22,10 @@
   width: 300px;
 }
 @media only screen and (max-width: 700px) {
-  .Header-wrapper{
+  .Header-wrapper {
     height: 100px;
   }
-  .Header-hero{
+  .Header-hero {
     margin: 10px;
     width: 100%;
     text-align: center;
@@ -36,18 +36,18 @@
     padding: 10px;
   }
 }
-.Header-icon{
+.Header-icon {
   height: 20px;
   margin-right: 10px;
 }
-.Header-input{
+.Header-input {
   border: none;
   outline: none;
   background-color: #f5f5f5;
   font-size: 1rem;
   flex: 1;
 }
-.Header-boundry{
+.Header-boundry {
   background: #cccccc1a;
   border: 3px solid #cccccc61;
   border-radius: 5px;

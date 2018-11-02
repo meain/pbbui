@@ -1,24 +1,24 @@
-.Cards-wrapper{
+.Cards-wrapper {
   margin-top: 150px;
 }
 @media only screen and (max-width: 700px) {
-  .Cards-wrapper{
+  .Cards-wrapper {
     margin-top: 130px;
     flex: 1;
   }
 }
 .Cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 .swal-content {
   text-align: left;
   overflow: auto;
   max-height: calc(80vh - 110px);
 }
-.swal-content *{
+.swal-content * {
   font-family: monaco, consolas, 'Inconsolata', monospace;
 }
 .swal-modal {
@@ -26,10 +26,10 @@
   max-height: 80vh;
   max-width: 900px;
 }
-.swal-button{
-    background-color: #f5f5f5 !important;
-    color: #222;
+.swal-button {
+  background-color: #f5f5f5 !important;
+  color: #222;
 }
-.swal-button:hover{
-    background-color: #f5f5f5 !important;
+.swal-button:hover {
+  background-color: #f5f5f5 !important;
 }
