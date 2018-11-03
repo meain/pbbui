@@ -14,7 +14,8 @@
 
 .Card:hover {
   background-color: #f9f9f9;
-  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 
 .header {
