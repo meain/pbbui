@@ -4,7 +4,11 @@ import './Cards.css'
 import React from 'react'
 import swal from 'sweetalert'
 
-import Card from '../Card/Card'
+import Card, { type CardType } from '../Card/Card'
+
+type Props = {
+  cards: Array<Array<CardType>>,
+}
 
 var Remarkable = require('remarkable')
 var hljs = require('highlight.js')
@@ -19,7 +23,7 @@ var md = new Remarkable('full', {
   typographer: false,
   quotes: '“”‘’',
   highlight: function(str, lang) {
-    if (lang == 'shell') lang = 'sh'
+    if (lang === 'shell') lang = 'sh'
     if (lang && hljs.getLanguage(lang)) {
       try {
         return hljs.highlight(lang, str).value
@@ -34,8 +38,7 @@ var md = new Remarkable('full', {
   },
 })
 
-const Cards = ({ cards }) => {
-  let previousHeader = undefined
+const Cards = ({ cards }: Props) => {
   return (
     <div class="Cards-wrapper">
       {cards.length === 0 && <span className="no-content">No content available</span>}

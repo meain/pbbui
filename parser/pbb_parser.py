@@ -38,5 +38,5 @@ for line in data:
         parsed[heading][subheading] = content
 
 open("../src/pbb.js", "w").write(
-    "const data = " + json.dumps(parsed) + "\nexport default data"
+    "/* eslint-disable */\nconst data = " + json.dumps(parsed) + "\nexport default data"
 )

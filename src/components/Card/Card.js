@@ -2,13 +2,16 @@
 import * as React from 'react'
 import './Card.css'
 
-type Props = {
+export type CardType = {
   header: string,
   title: string,
+  accent: string,
+  content: string,
+  onClick: void => mixed,
 }
-type State = {}
+type Props = CardType
 
-const Card = ({ header, title, accent, onClick }) => {
+const Card = ({ header, title, accent, onClick }: Props) => {
   return (
     <div className="Card" onClick={onClick}>
       <div

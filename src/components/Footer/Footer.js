@@ -7,13 +7,13 @@ const Footer = () => {
     <div className="Footer">
       <span>
         <span>Content:</span>{' '}
-        <a target="_blank" href="https://github.com/dylanaraps/pure-bash-bible">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dylanaraps/pure-bash-bible">
           dylanaraps/pure-bash-bible
         </a>
       </span>
       <span>
         <span>Webpage:</span>{' '}
-        <a target="_blank" href="https://github.com/meain/pbbui">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/meain/pbbui">
           meain/pbbui
         </a>
       </span>
