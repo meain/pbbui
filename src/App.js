@@ -38,7 +38,6 @@ const App = () => {
   const [cards, setCards] = useState(fData)
 
   const filterCards = search => {
-    console.log('search:', search)
     let newCards = fData
       .map(ca =>
         ca.filter(
