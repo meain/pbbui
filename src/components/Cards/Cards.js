@@ -3,6 +3,7 @@ import './Cards.css'
 
 import React from 'react'
 import swal from 'sweetalert'
+import emptyImage from './undraw_empty_xct9.svg'
 
 import Card, { type CardType } from '../Card/Card'
 
@@ -41,7 +42,12 @@ var md = new Remarkable('full', {
 const Cards = ({ cards }: Props) => {
   return (
     <div class="Cards-wrapper">
-      {cards.length === 0 && <span className="no-content">No content available</span>}
+      {cards.length === 0 && (
+        <div className="no-content">
+          <img src={emptyImage} alt="" />
+          <div>Woops, I could not find anything for that search</div>
+        </div>
+      )}
       {cards.map(set => (
         <>
           <h2 style={{ color: set[0].accent }}>{set[0].header}</h2>
