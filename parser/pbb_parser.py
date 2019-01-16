@@ -27,6 +27,7 @@ def get_json(url, base_indent):
                 heading = None
                 continue
             if not is_code_block:
+                subheading = None
                 heading = re.sub("#" + "#" * base_indent + " *", "", line)
         elif line.startswith("<!--"):
             continue
