@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <div className="Footer">
       <span>
-        <span>Content:</span>{' '}
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dylanaraps/pure-bash-bible">
-          dylanaraps/pure-bash-bible
+        <span>Contents by:</span>{' '}
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dylanaraps">
+          dylanaraps
         </a>
       </span>
       <span>

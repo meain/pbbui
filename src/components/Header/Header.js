@@ -22,6 +22,7 @@ const Header = ({ name, projects, currentProject, onSearch, onProjectChange }: P
       border: 'none',
       borderBottom: '1px solid #ccc',
       borderRadius: '0',
+      margin: '6px 0'
     }),
     menu: styles => ({
       ...styles,

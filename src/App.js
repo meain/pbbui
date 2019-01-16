@@ -74,7 +74,7 @@ const App = () => {
         onProjectChange={projectChange}
       />
       <Cards cards={cards} />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
