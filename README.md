@@ -19,3 +19,5 @@ python3 pbb_parser.py
 ```
 npm start
 ```
+
+> Btw this uses `react-hooks` and yarn's `pnp`. Just saying.
