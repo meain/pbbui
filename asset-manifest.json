@@ -1,15 +1,15 @@
 {
-  "main.css": "/pbbui/static/css/main.f3d06017.chunk.css",
-  "main.js": "/pbbui/static/js/main.352d1579.chunk.js",
-  "main.js.map": "/pbbui/static/js/main.352d1579.chunk.js.map",
-  "static/js/1.bd2a48c5.chunk.js": "/pbbui/static/js/1.bd2a48c5.chunk.js",
-  "static/js/1.bd2a48c5.chunk.js.map": "/pbbui/static/js/1.bd2a48c5.chunk.js.map",
+  "main.css": "/pbbui/static/css/main.5a58f2d7.chunk.css",
+  "main.js": "/pbbui/static/js/main.11cd16b6.chunk.js",
+  "main.js.map": "/pbbui/static/js/main.11cd16b6.chunk.js.map",
+  "static/js/1.44d50416.chunk.js": "/pbbui/static/js/1.44d50416.chunk.js",
+  "static/js/1.44d50416.chunk.js.map": "/pbbui/static/js/1.44d50416.chunk.js.map",
   "runtime~main.js": "/pbbui/static/js/runtime~main.701e34dc.js",
   "runtime~main.js.map": "/pbbui/static/js/runtime~main.701e34dc.js.map",
   "static/media/undraw_empty_xct9.svg": "/pbbui/static/media/undraw_empty_xct9.cfb49f55.svg",
   "static/media/magnifier-tool.svg": "/pbbui/static/media/magnifier-tool.54af9eb3.svg",
-  "static/css/main.f3d06017.chunk.css.map": "/pbbui/static/css/main.f3d06017.chunk.css.map",
+  "static/css/main.5a58f2d7.chunk.css.map": "/pbbui/static/css/main.5a58f2d7.chunk.css.map",
   "index.html": "/pbbui/index.html",
-  "precache-manifest.4936671948090852bc6b62bd7fd41d35.js": "/pbbui/precache-manifest.4936671948090852bc6b62bd7fd41d35.js",
+  "precache-manifest.f0ac520cc65164c33be2a03c01db472d.js": "/pbbui/precache-manifest.f0ac520cc65164c33be2a03c01db472d.js",
   "service-worker.js": "/pbbui/service-worker.js"
 }
