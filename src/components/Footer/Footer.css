@@ -15,3 +15,9 @@
 .Footer > span > a {
   color: turquoise;
 }
+
+@media only screen and (max-width: 600px) {
+  .Footer {
+    display: none;
+  }
+}
