@@ -8,6 +8,8 @@ import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import data from './pbb.js'
 
+export type ProjectOption = { value: number, label: string }
+
 const getTagColor = (tag: string): string => {
   const colorHash = new ColorHash({ lightness: 0.5 })
   let color = colorHash.rgb(tag)
@@ -33,28 +35,46 @@ const formatData = data => {
   return formatted
 }
 
+const filterCards = (cards, search) => {
+  let newCards = cards
+    .map(ca =>
+      ca.filter(
+        c =>
+          c.title.toLowerCase().includes(search.toLowerCase()) ||
+          c.header.toLowerCase().includes(search.toLowerCase())
+      )
+    )
+    .filter(cd => cd.length > 0)
+  return newCards
+}
+
 const App = () => {
-  const fData = formatData(data)
+  const projects = data.map((d, i) => {
+    return { label: d.name, value: i }
+  })
+
+  const [project, setProject] = useState(0)
+  const { name, content } = data[project]
+
+  const fData = formatData(content)
   const [cards, setCards] = useState(fData)
 
-  const filterCards = search => {
-    let newCards = fData
-      .map(ca =>
-        ca.filter(
-          c =>
-            c.title.toLowerCase().includes(search.toLowerCase()) ||
-            c.header.toLowerCase().includes(search.toLowerCase())
-        )
-      )
-      .filter(cd => cd.length > 0)
-    setCards(newCards)
+  const projectChange = (project: number) => {
+    setProject(project)
+    setCards(filterCards(formatData(data[project].content), ''))
   }
 
   return (
     <div className="App">
-      <Header onChange={filterCards} />
+      <Header
+        name={name}
+        projects={projects}
+        currentProject={project}
+        onSearch={filterCards}
+        onProjectChange={projectChange}
+      />
       <Cards cards={cards} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -41,7 +41,7 @@ var md = new Remarkable('full', {
 
 const Cards = ({ cards }: Props) => {
   return (
-    <div class="Cards-wrapper">
+    <div className="Cards-wrapper">
       {cards.length === 0 && (
         <div className="no-content">
           <img src={emptyImage} alt="" />
