@@ -4,6 +4,7 @@ import requests
 
 # https://raw.githubusercontent.com/dylanaraps/pure-bash-bible/master/README.md
 # https://raw.githubusercontent.com/dylanaraps/writing-a-tui-in-bash/master/README.md
+# https://raw.githubusercontent.com/denysdovhan/wtfjs/master/README.md
 
 
 def get_json(url, base_indent):
@@ -18,11 +19,11 @@ def get_json(url, base_indent):
     for line in data:
         if line.startswith("```"):
             is_code_block = not is_code_block
-        if line.startswith("#" + "#" * (base_indent + 1)):
+        if line.startswith("#" + "#" * (base_indent + 1) + " "):
             if not is_code_block:
                 content = []
                 subheading = re.sub("#" + "#" * (base_indent + 1) + " *", "", line)
-        elif line.startswith("#" + "#" * base_indent):
+        elif line.startswith("#" + "#" * base_indent + " "):
             if re.sub("#" + "#" * base_indent + " *", "", line) in ignored_headers:
                 heading = None
                 continue
