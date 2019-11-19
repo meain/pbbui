@@ -59,9 +59,9 @@ const App = () => {
   const fData = formatData(content)
   const [cards, setCards] = useState(fData)
 
-  const projectChange = (project: number) => {
+  const projectChange = (project: number, value: string = "") => {
     setProject(project)
-    setCards(filterCards(formatData(data[project].content), ''))
+    setCards(filterCards(formatData(data[project].content), value))
   }
 
   return (
@@ -70,7 +70,7 @@ const App = () => {
         name={name}
         projects={projects}
         currentProject={project}
-        onSearch={filterCards}
+        onSearch={val => projectChange(project, val)}
         onProjectChange={projectChange}
       />
       <Cards cards={cards} />

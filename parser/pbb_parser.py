@@ -14,7 +14,13 @@ def get_json(url, base_indent):
     content = []
     parsed = {}
     is_code_block = False
-    ignored_headers = ["Table of Contents", "FOREWORD", "AFTERWORD", "References"]
+    ignored_headers = [
+        "Table of Contents",
+        "FOREWORD",
+        "AFTERWORD",
+        "References",
+        "Contributing",
+    ]
 
     for line in data:
         if line.startswith("```"):
@@ -51,10 +57,31 @@ data = [
         ),
     },
     {
+        "name": "Pure sh Bible",
+        "content": get_json(
+            "https://raw.githubusercontent.com/dylanaraps/pure-sh-bible/master/README.md",
+            0,
+        ),
+    },
+    {
         "name": "Writing a TUI in Bash",
         "content": get_json(
             "https://raw.githubusercontent.com/dylanaraps/writing-a-tui-in-bash/master/README.md",
             1,
+        ),
+    },
+    {
+        "name": "Frontend Checklist",
+        "content": get_json(
+            "https://raw.githubusercontent.com/thedaviddias/Front-End-Checklist/master/README.md",
+            1,
+        ),
+    },
+    {
+        "name": "API Security Checklist",
+        "content": get_json(
+            "https://raw.githubusercontent.com/shieldfy/API-Security-Checklist/master/README.md",
+            0,
         ),
     },
 ]

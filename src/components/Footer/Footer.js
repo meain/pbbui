@@ -6,13 +6,7 @@ const Footer = () => {
   return (
     <div className="Footer">
       <span>
-        <span>Contents by:</span>{' '}
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dylanaraps">
-          dylanaraps
-        </a>
-      </span>
-      <span>
-        <span>Webpage:</span>{' '}
+        <span>Github:</span>{' '}
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/meain/pbbui">
           meain/pbbui
         </a>
