@@ -84,6 +84,20 @@ data = [
             0,
         ),
     },
+    # {
+    #     "name": "Awesome list",
+    #     "content": get_json(
+    #         "https://raw.githubusercontent.com/sindresorhus/awesome/master/readme.md",
+    #         1,
+    #     ),
+    # },
+    # {
+    #     "name": "Node best practices",
+    #     "content": get_json(
+    #         "https://raw.githubusercontent.com/goldbergyoni/nodebestpractices/master/README.md",
+    #         0,
+    #     ),
+    # },
 ]
 
 open("../src/pbb.js", "w").write(
