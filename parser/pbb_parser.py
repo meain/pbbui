@@ -3,10 +3,6 @@ import re
 
 import requests
 
-# https://raw.githubusercontent.com/dylanaraps/pure-bash-bible/master/README.md
-# https://raw.githubusercontent.com/dylanaraps/writing-a-tui-in-bash/master/README.md
-# https://raw.githubusercontent.com/denysdovhan/wtfjs/master/README.md
-
 
 def get_json(url, base_indent):
     data = requests.get(url).text.split("\n")
@@ -56,41 +52,43 @@ def arr_to_dict(x):
     }
 
 
-data = list(map(
-    arr_to_dict,
-    [
+data = list(
+    map(
+        arr_to_dict,
         [
-            "Pure Bash Bible",
-            "https://raw.githubusercontent.com/dylanaraps/pure-bash-bible/master/README.md",
-            0,
+            [
+                "Pure Bash Bible",
+                "https://raw.githubusercontent.com/dylanaraps/pure-bash-bible/master/README.md",
+                0,
+            ],
+            [
+                "Pure sh Bible",
+                "https://raw.githubusercontent.com/dylanaraps/pure-sh-bible/master/README.md",
+                0,
+            ],
+            [
+                "Writing a TUI in Bash",
+                "https://raw.githubusercontent.com/dylanaraps/writing-a-tui-in-bash/master/README.md",
+                1,
+            ],
+            [
+                "Frontend Checklist",
+                "https://raw.githubusercontent.com/thedaviddias/Front-End-Checklist/master/README.md",
+                1,
+            ],
+            [
+                "API Security Checklist",
+                "https://raw.githubusercontent.com/shieldfy/API-Security-Checklist/master/README.md",
+                0,
+            ],
+            [
+                "The Art of Command Line",
+                "https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md",
+                0,
+            ],
         ],
-        [
-            "Pure sh Bible",
-            "https://raw.githubusercontent.com/dylanaraps/pure-sh-bible/master/README.md",
-            0,
-        ],
-        [
-            "Writing a TUI in Bash",
-            "https://raw.githubusercontent.com/dylanaraps/writing-a-tui-in-bash/master/README.md",
-            1,
-        ],
-        [
-            "Frontend Checklist",
-            "https://raw.githubusercontent.com/thedaviddias/Front-End-Checklist/master/README.md",
-            1,
-        ],
-        [
-            "API Security Checklist",
-            "https://raw.githubusercontent.com/shieldfy/API-Security-Checklist/master/README.md",
-            0,
-        ],
-        [
-            "The Art of Command Line",
-            "https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md",
-            0,
-        ],
-    ],
-))
+    )
+)
 
 open("../src/pbb.js", "w").write(
     "/* eslint-disable */\nconst data = " + json.dumps(data) + "\nexport default data"
