@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pbbui/static/css/main.89f5085c.chunk.css",
-    "main.js": "/pbbui/static/js/main.c497843b.chunk.js",
-    "main.js.map": "/pbbui/static/js/main.c497843b.chunk.js.map",
+    "main.js": "/pbbui/static/js/main.c5c7713f.chunk.js",
+    "main.js.map": "/pbbui/static/js/main.c5c7713f.chunk.js.map",
     "runtime-main.js": "/pbbui/static/js/runtime-main.16b02a6f.js",
     "runtime-main.js.map": "/pbbui/static/js/runtime-main.16b02a6f.js.map",
     "static/js/2.fdb7b0fe.chunk.js": "/pbbui/static/js/2.fdb7b0fe.chunk.js",
     "static/js/2.fdb7b0fe.chunk.js.map": "/pbbui/static/js/2.fdb7b0fe.chunk.js.map",
     "index.html": "/pbbui/index.html",
-    "precache-manifest.f460bbc0802e2f34ff6c7ec5c8a3dc17.js": "/pbbui/precache-manifest.f460bbc0802e2f34ff6c7ec5c8a3dc17.js",
+    "precache-manifest.1836cc4a76496a6582197b33b2a3d867.js": "/pbbui/precache-manifest.1836cc4a76496a6582197b33b2a3d867.js",
     "service-worker.js": "/pbbui/service-worker.js",
     "static/css/main.89f5085c.chunk.css.map": "/pbbui/static/css/main.89f5085c.chunk.css.map",
     "static/media/magnifier-tool.svg": "/pbbui/static/media/magnifier-tool.54af9eb3.svg",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.16b02a6f.js",
     "static/js/2.fdb7b0fe.chunk.js",
     "static/css/main.89f5085c.chunk.css",
-    "static/js/main.c497843b.chunk.js"
+    "static/js/main.c5c7713f.chunk.js"
   ]
 }
