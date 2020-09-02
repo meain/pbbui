@@ -5,6 +5,7 @@ import requests
 
 
 def get_json(url, base_indent):
+    print("processing:", url)
     data = requests.get(url).text.split("\n")
     heading = None
     subheading = None
@@ -84,6 +85,11 @@ data = list(
             [
                 "The Art of Command Line",
                 "https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md",
+                0,
+            ],
+            [
+                "Neovim lua guide",
+                "https://raw.githubusercontent.com/nanotee/nvim-lua-guide/master/README.md",
                 0,
             ],
         ],
