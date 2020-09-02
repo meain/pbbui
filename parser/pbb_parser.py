@@ -1,5 +1,6 @@
-import re
 import json
+import re
+
 import requests
 
 # https://raw.githubusercontent.com/dylanaraps/pure-bash-bible/master/README.md
@@ -48,57 +49,48 @@ def get_json(url, base_indent):
     return parsed
 
 
-data = [
-    {
-        "name": "Pure Bash Bible",
-        "content": get_json(
+def arr_to_dict(x):
+    return {
+        "name": x[0],
+        "content": get_json(x[1], x[2]),
+    }
+
+
+data = list(map(
+    arr_to_dict,
+    [
+        [
+            "Pure Bash Bible",
             "https://raw.githubusercontent.com/dylanaraps/pure-bash-bible/master/README.md",
             0,
-        ),
-    },
-    {
-        "name": "Pure sh Bible",
-        "content": get_json(
+        ],
+        [
+            "Pure sh Bible",
             "https://raw.githubusercontent.com/dylanaraps/pure-sh-bible/master/README.md",
             0,
-        ),
-    },
-    {
-        "name": "Writing a TUI in Bash",
-        "content": get_json(
+        ],
+        [
+            "Writing a TUI in Bash",
             "https://raw.githubusercontent.com/dylanaraps/writing-a-tui-in-bash/master/README.md",
             1,
-        ),
-    },
-    {
-        "name": "Frontend Checklist",
-        "content": get_json(
+        ],
+        [
+            "Frontend Checklist",
             "https://raw.githubusercontent.com/thedaviddias/Front-End-Checklist/master/README.md",
             1,
-        ),
-    },
-    {
-        "name": "API Security Checklist",
-        "content": get_json(
+        ],
+        [
+            "API Security Checklist",
             "https://raw.githubusercontent.com/shieldfy/API-Security-Checklist/master/README.md",
             0,
-        ),
-    },
-    # {
-    #     "name": "Awesome list",
-    #     "content": get_json(
-    #         "https://raw.githubusercontent.com/sindresorhus/awesome/master/readme.md",
-    #         1,
-    #     ),
-    # },
-    # {
-    #     "name": "Node best practices",
-    #     "content": get_json(
-    #         "https://raw.githubusercontent.com/goldbergyoni/nodebestpractices/master/README.md",
-    #         0,
-    #     ),
-    # },
-]
+        ],
+        [
+            "The Art of Command Line",
+            "https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md",
+            0,
+        ],
+    ],
+))
 
 open("../src/pbb.js", "w").write(
     "/* eslint-disable */\nconst data = " + json.dumps(data) + "\nexport default data"
