@@ -18,6 +18,7 @@ jobs:
       - name: Populate files
         run: |
           cd parser
+          pip install requests
           python pbb_parser.py
 
       - name: Install and Build 🔧
